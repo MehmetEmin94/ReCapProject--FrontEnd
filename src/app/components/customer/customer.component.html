@@ -1,0 +1,19 @@
+<table class="table table-success table-striped">
+    <!-- <thead>
+        <tr>
+            <td>Customer Id</td>
+            <td>Company Name</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let customer of customers">
+            <td>{{customer.id}}</td>
+            <td>{{customer.companyName |titlecase}}</td>
+        </tr>
+    </tbody>
+</table> -->
+    <header style="text-align: center;">Customers</header>
+    <ul class="list-group" *ngFor="let customer of customers">
+
+        <li class="list-group-item" style="text-align: center;">{{customer.companyName |titlecase}}</li>
+    </ul>

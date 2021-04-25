@@ -1,0 +1,29 @@
+<div class="row">
+    <div style="width: 24rem; position: relative; top: 130px;left: 0px;">
+        <img (click)="setCurrentCustomer(customerAll)" routerLink="/customers" class="btn btn-clr btn-lg round" src="../../../assets/customers.jpg" alt="thumbnail" width="375" height="250">
+        <div class="card-body text-center">
+            <h4>
+                <a class="btn button">Customers </a>
+            </h4>
+        </div>
+    </div>
+
+
+    <div style="width: 24rem; position: relative; top: 130px;left: 75px;">
+        <img (click)="setCurrentCar(carAll)" routerLink="/cars" class="btn btn-clr btn-lg round" src="../../../assets/cars.jpg" alt="thumbnail" width="375" height="250">
+        <div class="card-body text-center">
+            <h4>
+                <a (click)="setCurrentCar(carAll)" routerLink="/cars" class="btn button ">Cars </a>
+            </h4>
+        </div>
+    </div>
+    <div style="width: 24rem; position: relative; top: 130px;left: 150px;">
+        <img (click)="setCurrentRental(rentalAll)" routerLink="/rentals" class="btn btn-clr btn-lg round" src="../../../assets/rentals.jpg" alt="thumbnail" width="375" height="250">
+        <div class="card-body text-center">
+            <h4>
+                <a (click)="setCurrentRental(rentalAll)" routerLink="/rentals" class="btn button ">Rentals </a>
+            </h4>
+        </div>
+    </div>
+
+</div>

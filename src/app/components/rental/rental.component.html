@@ -1,0 +1,36 @@
+<div class="container" style="color: rgb(114, 134, 120);">
+    <div class="row">
+
+        <div class="col-md-3">
+            <div class="row">
+                <app-customer></app-customer>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <table class="table table-success table-striped">
+                <thead>
+                    <tr>
+                        <td>Rental Id</td>
+                        <td>Brand</td>
+                        <td>Model</td>
+                        <td>First Name</td>
+                        <td>Last Name</td>
+                        <td>Rent Date</td>
+                        <td>Return Date</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let rental of rentals">
+                        <td>{{rental.id}}</td>
+                        <td>{{rental.brandName }}</td>
+                        <td>{{rental.carName }}</td>
+                        <td>{{rental.firstName }}</td>
+                        <td>{{rental.lastName }}</td>
+                        <td>{{rental.rentDate }}</td>
+                        <td>{{rental.returnDate }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
