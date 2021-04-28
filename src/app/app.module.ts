@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {HttpClientModule} from '@angular/common/http';
+import { MdbModule } from 'mdb-angular-ui-kit';
 
 
 
@@ -13,6 +14,8 @@ import { ColorComponent } from './components/color/color.component';
 import { CustomerComponent } from './components/customer/customer.component';
 import { RentalComponent } from './components/rental/rental.component';
 import { HomeComponent } from './components/home/home.component';
+import { CarDetailComponent } from './components/car-detail/car-detail.component';
+import { SliderItemDirective } from './directives/slider-item.directive';
 
 @NgModule({
   declarations: [
@@ -23,12 +26,15 @@ import { HomeComponent } from './components/home/home.component';
     ColorComponent,
     CustomerComponent,
     RentalComponent,
-    HomeComponent
+    HomeComponent,
+    CarDetailComponent,
+    SliderItemDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    MdbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

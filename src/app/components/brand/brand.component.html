@@ -1,4 +1,6 @@
-<header style="text-align: center;">Choose Brand</header>
-<ul class="list-group" *ngFor="let brand of brands">
-    <li class="list-group-item" style="text-align: center;">{{brand.brandName |titlecase}}</li>
-</ul>
+<ul class="list-group">
+    <h4>Choose Brand</h4>
+    <li (click)="setCurrentBrand(brand)" routerLink="/cars/brands/{{brand.brandId}}" *ngFor="let brand of brands" [class]="getCurrentBrand(brand)">
+        {{brand.brandName}}
+    </li>
+</ul><br>

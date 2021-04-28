@@ -11,6 +11,7 @@ import { BrandService } from 'src/app/services/brand.service';
 export class BrandComponent implements OnInit {
 
   brands:Brand[]=[];
+  currentBrand: Brand;
   constructor(private brandService:BrandService,private activatedRoute:ActivatedRoute) { }
 
   ngOnInit(): void {
@@ -21,4 +22,15 @@ getBrands(){
     this.brands=response.data
   })
 }
+
+setCurrentBrand(brand:Brand){
+  this.currentBrand=brand;
+    }
+    getCurrentBrand(brand:Brand){
+      if(brand==this.currentBrand){
+        return "list-group-item list-group-item-dark"
+      }else{
+        return "list-group-item"
+      }
+    }
 }

@@ -1,0 +1,13 @@
+.btn-rent {
+    background-color: rgb(30, 179, 144);
+    color: azure;
+}
+
+.btn-rent:hover {
+    background-color: cadetblue;
+    color: darkcyan;
+}
+
+.col-mine {
+    width: 363px;
+}

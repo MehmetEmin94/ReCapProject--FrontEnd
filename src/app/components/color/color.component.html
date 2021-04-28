@@ -1,5 +1,7 @@
 <br><br>
-<header style="text-align: center;">Choose Color</header>
 <ul class="list-group">
-    <li class="list-group-item" *ngFor="let color of colors" style="text-align: center;">{{color.colorName |titlecase}}</li>
-</ul>
+    <h4>Colors</h4>
+    <li (click)="setCurrentColor(color)" routerLink="/cars/colors/{{color.colorId}}" *ngFor="let color of colors" [class]="getCurrentColor(color)">
+        {{color.colorName}}
+    </li>
+</ul><br>
