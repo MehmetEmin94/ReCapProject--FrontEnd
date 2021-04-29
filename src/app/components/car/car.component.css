@@ -11,3 +11,9 @@
 .col-mine {
     width: 363px;
 }
+
+.bg-smthg {
+    background: #44b09e 0%;
+    background: -webkit-linear-gradient(to right, #44b09e 0%, rgb(230, 248, 245));
+    background: linear-gradient(to right, #44b09e 0%, rgb(230, 248, 245));
+}

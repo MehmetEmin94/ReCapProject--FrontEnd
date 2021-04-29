@@ -29,7 +29,7 @@ export class ColorComponent implements OnInit {
         if(color==this.currentColor){
           return "list-group-item list-group-item-dark"
         }else{
-          return "list-group-item"
+          return "list-group-item bg-smthg"
         }
       }
 

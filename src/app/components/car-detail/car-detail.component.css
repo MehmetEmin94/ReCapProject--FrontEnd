@@ -1,0 +1,21 @@
+.bg-smthg {
+    background: #44b09e 0%;
+    background: -webkit-linear-gradient(to right, #44b09e 0%, rgb(230, 248, 245));
+    background: linear-gradient(to right, #44b09e 0%, rgb(230, 248, 245));
+}
+
+.bg-smthg-2 {
+    background: #44b09e 0%;
+    background: -webkit-linear-gradient(rgb(230, 248, 245), #44b09e 0%, rgb(230, 248, 245));
+    background: linear-gradient(rgb(230, 248, 245), #44b09e 0%, rgb(230, 248, 245));
+}
+
+.btn-rent {
+    background-color: rgb(30, 179, 144);
+    color: azure;
+}
+
+.btn-rent:hover {
+    background-color: cadetblue;
+    color: darkcyan;
+}

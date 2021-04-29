@@ -1,7 +1,7 @@
 <div class="row">
-    <div class="col-xl-8 col-md-8 shadow-lg p-3 mb-5 bg-body rounded " style="margin: auto; width: 40rem; height: 40rem;">
-        <div class="card border-0 mb-6" style="width: 32rem; height: 36rem; margin: auto;">
-            <div class="container">
+    <div class="col-xl-8 col-md-8 shadow-lg p-3 mb-5 bg-smthg rounded " style="margin: auto; width: 40rem; height: 40rem;">
+        <div class="card border-0 mb-6 " style="width: 32rem; height: 37rem; margin: auto; background-color: rgb(230, 248, 245);">
+            <div class="container ">
                 <div class="row">
                     <div id="carouselExampleControls" class="carousel slide" data-mdb-ride="carousel">
                         <div class="carousel-inner">
@@ -43,20 +43,20 @@
                 </h4>
                 <p class="card-text h3">${{carDetail.dailyPrice}}/Day</p>
             </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">
+            <ul class="list-group list-group-flush " style="background-color: rgb(230, 248, 245); width: 90%; margin: auto;">
+                <li class="list-group-item rounded bg-smthg-2">
                     <span class="float-start">Brand</span>
                     <span class="float-end">{{carDetail.brandName}}</span>
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item rounded bg-smthg-2" style="margin-top: 2px;">
                     <span class="float-start">Color </span>
                     <span class="float-end">{{carDetail.colorName}}</span>
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item rounded bg-smthg-2" style="margin-top: 2px;">
                     <span class="float-start">Model Year </span>
                     <span class="float-end">{{carDetail.modelYear}}</span>
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item rounded bg-smthg-2" style="margin-top: 2px;">
                     <span class="float-start">Description </span>
                     <span class="float-end">{{carDetail.description}}</span>
                 </li>
@@ -64,7 +64,7 @@
             </ul>
             <div class="card-body">
                 <div class="d-flex action justify-content-between">
-                    <a href="" class="btn btn-info ">Rent Now</a>
+                    <a href="" class="btn btn-rent ">Rent Now</a>
                     <a routerLink="/cars" class="btn btn-secondary ">All Cars </a>
                 </div>
             </div>

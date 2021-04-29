@@ -1,7 +1,7 @@
-<br><br>
-<ul class="list-group">
+<br>
+<ul class="list-group" style="text-align: center;">
     <h4>Colors</h4>
-    <li (click)="setCurrentColor(color)" routerLink="/cars/colors/{{color.colorId}}" *ngFor="let color of colors" [class]="getCurrentColor(color)">
+    <li (click)="setCurrentColor(color)" routerLink="/cars/colors/{{color.colorId}}" *ngFor="let color of colors" [class]="getCurrentColor(color)" style="margin-top: 2px;">
         {{color.colorName}}
     </li>
 </ul><br>
